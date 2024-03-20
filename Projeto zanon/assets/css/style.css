@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+.header {
+    background-color: green;
+    height: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Adicionado para alinhar verticalmente */
+}
+
+.header h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.search-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar input[type="submit"] {
+    padding: 10px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: green; 
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    background-color: white;
+    height: calc(100vh - 320px);
+}
+
+/* Adicione o CSS para a tabela de imagens aqui */
+.image-table {
+    display: table;
+    width: 100%;
+}
+
+.row {
+    display: table-row;
+}
+
+.column {
+    display: table-cell;
+    padding: 10px;
+    text-align: center; /* Centralizar o conteúdo */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 200px) {
+    /* Alinhar as células da segunda linha com as da primeira linha */
+    .row:nth-child(2) {
+        display: flex;
+    }
+
+    .column {
+        display: block;
+        width: 100%;
+    }
+}
+
